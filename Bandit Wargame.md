@@ -1,18 +1,26 @@
-# Bandit Wargame - Özet Tablosu (Summary Table)
+### **  
+Bandit Wargame - Özet Tablosu (Summary Table)**
 
-| Seviye (Level)      | Şifre (Password)                   | Amaç (Objective)                                    | Bağlantı Komutu (Connection Command)               | Detaylar (Details)   |
-| :------------------ | :--------------------------------- | :-------------------------------------------------- | :------------------------------------------------- | :------------------- |
-| **Bandit 0 -> 1**   | `bandit0`                          | SSH ve özel port ile giriş.                         | `ssh bandit0@bandit.labs.overthewire.org -p 2220`  | [[Bandit 0 Çözümü]]  |
-| **Bandit 1 -> 2**   | `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If` | Adı `-` olan dosyayı okumak.                        | `ssh bandit1@bandit.labs.overthewire.org -p 2220`  | [[Bandit 1 Çözümü]]  |
-| **Bandit 2 -> 3**   | `263JGJPfgU6LtdEvgfWU1XP5yac29mFx` | Boşluklu ve tireli dosya adını okumak.              | `ssh bandit2@bandit.labs.overthewire.org -p 2220`  | [[Bandit 2 Çözümü]]  |
-| **Bandit 3 -> 4**   | `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx` | Gizli bir dizindeki gizli bir dosyayı bulmak.       | `ssh bandit3@bandit.labs.overthewire.org -p 2220`  | [[Bandit 3 Çözümü]]  |
-| **Bandit 4 -> 5**   | `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ` | Çok sayıda dosya arasından okunabilir olanı bulmak. | `ssh bandit4@bandit.labs.overthewire.org -p 2220`  | [[Bandit 4 Çözümü]]  |
-| **Bandit 5 -> 6**   | `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG` | Belirli özelliklere sahip bir dosyayı bulmak.       | `ssh bandit5@bandit.labs.overthewire.org -p 2220`  | [[Bandit 5 Çözümü]]  |
-| **Bandit 6 -> 7**   | `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj` | Tüm sunucuda belirli bir dosyayı bulmak.            | `ssh bandit6@bandit.labs.overthewire.org -p 2220`  | [[Bandit 6 Çözümü]]  |
-| **Bandit 7 -> 8**   | `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc` | Büyük bir dosyada belirli bir satırı bulmak.        | `ssh bandit7@bandit.labs.overthewire.org -p 2220`  | [[Bandit 7 Çözümü]]  |
-| **Bandit 8 -> 9**   | `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM` | Tekrarlanmayan tek satırı bulmak.                   | `ssh bandit8@bandit.labs.overthewire.org -p 2220`  | [[Bandit 8 Çözümü]]  |
-| **Bandit 9 -> 10**  | `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey` | İkili bir dosyadan okunabilir bir dize bulmak.      | `ssh bandit9@bandit.labs.overthewire.org -p 2220`  | [[Bandit 9 Çözümü]]  |
-| **Bandit 10 -> 11** | `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr` | Base64 kodlu veriyi çözmek.                         | `ssh bandit10@bandit.labs.overthewire.org -p 2220` | [[Bandit 10 Çözümü]] |
-| **Bandit 11 -> 12** | `7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4` | ROT13 ile şifrelenmiş metni çözmek.                 | `ssh bandit11@bandit.labs.overthewire.org -p 2220` | [[Bandit 11 Çözümü]] |
-| **Bandit 12 -> 13** | ...                                | ...                                                 | `ssh bandit12@bandit.labs.overthewire.org -p 2220` | [[Bandit 12 Çözümü]] |
+| Seviye (Level)      | Şifre (Password)                   | Amaç (Objective)                                                                                    | Bağlantı Komutu (Connection Command)                               | Detaylar (Details)   |
+| ------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ | -------------------- |
+| **Bandit 0 -> 1**   | `bandit0`                          | SSH ve özel port ile giriş.                                                                         | `ssh bandit0@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 0 Çözümü]]  |
+| **Bandit 1 -> 2**   | `ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If` | Adı `-` olan dosyayı okumak.                                                                        | `ssh bandit1@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 1 Çözümü]]  |
+| **Bandit 2 -> 3**   | `263JGJPfgU6LtdEvgfWU1XP5yac29mFx` | Boşluklu ve tireli dosya adını okumak.                                                              | `ssh bandit2@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 2 Çözümü]]  |
+| **Bandit 3 -> 4**   | `MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx` | Gizli bir dizindeki gizli bir dosyayı bulmak.                                                       | `ssh bandit3@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 3 Çözümü]]  |
+| **Bandit 4 -> 5**   | `2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ` | Çok sayıda dosya arasından okunabilir olanı bulmak.                                                 | `ssh bandit4@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 4 Çözümü]]  |
+| **Bandit 5 -> 6**   | `HWasnPhtq9AVKe0dmk45nxy20cvUa6EG` | Belirli özelliklere sahip bir dosyayı bulmak.                                                       | `ssh bandit5@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 5 Çözümü]]  |
+| **Bandit 6 -> 7**   | `morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj` | Tüm sunucuda belirli bir dosyayı bulmak.                                                            | `ssh bandit6@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 6 Çözümü]]  |
+| **Bandit 7 -> 8**   | `dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc` | Büyük bir dosyada belirli bir satırı bulmak.                                                        | `ssh bandit7@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 7 Çözümü]]  |
+| **Bandit 8 -> 9**   | `4CKMh1JI91bUIZZPXDqGanal4xvAg0JM` | Tekrarlanmayan tek satırı bulmak.                                                                   | `ssh bandit8@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 8 Çözümü]]  |
+| **Bandit 9 -> 10**  | `FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey` | İkili bir dosyadan okunabilir bir dize bulmak.                                                      | `ssh bandit9@bandit.labs.overthewire.org -p 2220`                  | [[Bandit 9 Çözümü]]  |
+| **Bandit 10 -> 11** | `dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr` | Base64 kodlu veriyi çözmek.                                                                         | `ssh bandit10@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 10 Çözümü]] |
+| **Bandit 11 -> 12** | `7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4` | ROT13 ile şifrelenmiş metni çözmek.                                                                 | `ssh bandit11@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 11 Çözümü]] |
+| **Bandit 12 -> 13** | `FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn` | Tekrar tekrar sıkıştırılmış bir dosyayı açmak.                                                      | `ssh bandit12@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 12 Çözümü]] |
+| **Bandit 13 -> 14** | `MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS` | Özel bir SSH anahtarı kullanarak başka bir kullanıcı olarak giriş yapmak.                           | `ssh bandit13@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 13 Çözümü]] |
+| **Bandit 14 -> 15** | `8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo` | `localhost` üzerindeki 30000 portuna mevcut şifreyi göndermek.                                      | `ssh bandit14@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 14 Çözümü]] |
+| **Bandit 15 -> 16** | `kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx` | SSL/TLS ile şifrelenmiş bir porta (`30001`) mevcut şifreyi göndermek.                               | `ssh bandit15@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 15 Çözümü]] |
+| **Bandit 16 -> 17** | **(SSH Anahtarı)**                 | Geniş bir port aralığında (`31000-32000`) doğru SSL/TLS portunu bulup özel SSH anahtarı elde etmek. | `ssh bandit16@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 16 Çözümü]] |
+| **Bandit 17 -> 18** | `x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO` | İki şifre dosyası (`.old` ve `.new`) arasındaki tek farkı bulmak.                                   | `ssh -i bandit17.key -p 2220 bandit17@bandit.labs.overthewire.org` | [[Bandit 17 Çözümü]] |
+| **Bandit 18 -> 19** | `cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8` | `.bashrc` dosyasının oturumu kapatmasını atlatarak `readme` dosyasını okumak.                       | `ssh bandit18@bandit.labs.overthewire.org -p 2220`                 | [[Bandit 18 Çözümü]] |
 
+شكرًا جدًا على التصحيح ده، التفاصيل الصغيرة دي هي اللي بتفرق وبتخلي الشغل احترافي.
