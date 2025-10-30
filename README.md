@@ -27,8 +27,8 @@ The content is presented in a parallel bilingual format (**Arabic** and **Turkis
 
 This guide was meticulously crafted and documented by:
 
-- **Youssef Gad**
-  - [GitHub Profile](https://github.com/Youssef-Gad )
+**Hamed Mohamed Abdelalim** 
+  - [GitHub Profili](https://github.com/7amed3li )
 
 ---
 
