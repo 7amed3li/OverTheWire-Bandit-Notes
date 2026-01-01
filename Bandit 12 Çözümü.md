@@ -25,7 +25,6 @@ Bu seviye, farklı dosya türlerini ve sıkıştırma formatlarını tanıma ve 
 3. **Asıl Problem Ne?** Orijinal dosya **tekrar tekrar sıkıştırılmış**. Bu, tek bir komutun yetmeyeceği ve bir döngüye girmemiz gerektiği anlamına gelir.
 4. **Görev Ne?** Bu sıkıştırma katmanlarını, bir soğanı soyar gibi, teker teker açmak. Her katmanı açtıktan sonra, bir sonraki katmanın ne olduğunu `file` komutu ile teşhis etmeli ve doğru aracı kullanmalıyız.
 5. **İpucu:** Hedef, `/tmp` altında çalışmamızı öneriyor. `mktemp -d` bunun için mükemmel bir araçtır.
-
 **İlk Plan:**
 
 1. `mktemp -d` ile güvenli bir çalışma alanı oluştur.

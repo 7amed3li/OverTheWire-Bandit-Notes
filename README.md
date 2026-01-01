@@ -24,11 +24,8 @@ The content is presented in a parallel bilingual format (**Arabic** and **Turkis
 ---
 
 ### :man_technologist: Author / المؤلف / Yazar
-
-This guide was meticulously crafted and documented by:
-
-- **Youssef Gad**
-  - [GitHub Profile](https://github.com/Youssef-Gad )
+Bu rehber, aşağıdaki kişi tarafından titizlikle hazırlanmış ve belgelenmiştir: - **Hamed Mohamed Abdelalim** 
+- [GitHub Profili](https://github.com/7amed3li )
 
 ---
 
