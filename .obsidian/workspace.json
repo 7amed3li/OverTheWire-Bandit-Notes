@@ -170,8 +170,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "97dcddc8d59b072a",
+  "active": "1436ef70ee0c17ac",
   "lastOpenFiles": [
+    "photos/banner.png",
+    "CONTRIBUTING.md",
+    "Concepts/Permissions_Deep_Dive.md",
+    "Concepts/Find_and_Grep_Mastery.md",
+    "Concepts/Piping_and_Redirection.md",
+    "Concepts/SSH_Basics.md",
+    "Concepts",
     "Bandit 26 Çözümü.md",
     "Bandit Wargame.md",
     "Bandit 25 Çözümü.md",
@@ -207,12 +214,6 @@
     "Bandit 21 Çözümü.md",
     "Bandit 20 Çözümü.md",
     "Linux Dosya İzinleri Açıklaması (-rwxrwxrwx).md",
-    "Bandit 19 Çözümü.md",
-    "Bandit 18 Çözümü.md",
-    "Bandit 6 Çözümü.md",
-    "Bandit 5 Çözümü.md",
-    "Bandit 4 Çözümü.md",
-    "Bandit 7 Çözümü.md",
     "photos",
     "CyberSec-Brain"
   ]

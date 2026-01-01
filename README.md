@@ -1,20 +1,19 @@
+# 🚩 Bandit OverTheWire: The Ultimate Trilingual Masterclass
+
+![Masterclass Banner](photos/banner.png)
+
 <div align="center">
 
-# 🚩 OverTheWire Bandit: The Ultimate Trilingual Masterclass
+### القمة في تعلم سطر الأوامر | Mastery for the Modern Hacker | Uzmanlık Rehberi
 
-### الدليل التعليمي العربي الشامل | Kapsamlı Türkçe Eğitim Rehberi | The Definitive English Guide
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/7amed3li)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/7amed3li/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Obsidian](https://img.shields.io/badge/View%20in-Obsidian-8A2BE2.svg?style=for-the-badge)](https://obsidian.md)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Languages](https://img.shields.io/badge/Languages-AR%20%7C%20TR%20%7C%20EN-blue.svg)](https://github.com/7amed3li/OverTheWire-Bandit-Notes)
-[![Obsidian Ready](https://img.shields.io/badge/View%20in-Obsidian-8A2BE2.svg)](https://obsidian.md)
+**"Methodology Over Memorization"** · **"المنهجية قبل الحفظ"** · **"Ezber Değil, Metodoloji"**
 
-<img src="https://overthewire.org/wargames/bandit/bandit_logo.png" width="180">
-
-**"Methodology Over Memorization"**
-**"المنهجية قبل الحفظ"**
-**"Ezber Değil, Metodoloji"**
-
-[English](#-english) | [العربية](#-العربية) | [Türkçe](#-türkçe)
+[**English**](#-english) | [**العربية**](#-العربية) | [**Türkçe**](#-türkçe)
 
 </div>
 
@@ -22,71 +21,74 @@
 
 ## 🇺🇸 English
 
-### 📖 About
+### 🎯 Pro Objective
 
-This repository is a methodology-focused educational guide for the **OverTheWire Bandit wargame**. It bridges the gap between knowing a command and understanding the Linux system.
+This project is an elite documentation initiative to master **Linux Security Fundamentals** through the **OverTheWire Bandit** series. It is designed for engineers who demand deep technical insight rather than just flags.
 
-### 🗺️ Skills Roadmap
+### 🛠️ The Expert Toolkit
 
-| Levels    | Focus               | Status |
-| :-------- | :------------------ | :----: |
-| **0-5**   | Navigation & Basics |   ✅   |
-| **6-10**  | Filtering & Finding |   ✅   |
-| **11-15** | Data Manipulation   |   ✅   |
-| **16-20** | Networking & SSL    |   ✅   |
+> [!TIP]
+> This guide emphasizes the "One-Liner" philosophy of advanced hackers.
 
-### 🛠️ Featured Tool
-
-![Bandit Challenge](file:///c:/Users/Hp/OverTheWire-Bandit-Notes/photos/Bandit%2023%20Challenge.png)
-_Visualizing scripts and automation in Bandit._
+- **Data Mastery**: Leveraging `grep`, `sed`, `awk`, and `xxd` for precision filtering.
+- **Traffic Analysis**: Mastering `nc`, `openssl`, and `nmap` for network exploration.
+- **Privilege Escalation**: In-depth analysis of `setuid` and permission flaws.
 
 ---
 
 ## 🇪🇬 العربية
 
-### 📖 عن المشروع
+### 📖 فلسفة الاحتراف: كيف يفكر الخبراء؟
 
-هذا المستودع هو دليل تعليمي شامل يركز على "عقلية الهكر" في حل تحديات **OverTheWire Bandit**. الهدف مش بس إنك تاخد الباسورد، الهدف إنك تفهم النظام شغال إزاي.
+هذا المستودع ليس مجرد دليل للحلول، بل هو **مرجع هندسي** متكامل. الهدف هو بناء "البديهة التقنية" التي تمكنك من فهم أي نظام لينكس بمجرد النظر إليه.
 
-### 🗺️ خارطة الطريق
+### 🗺️ خارطة الطريق (Skill Roadmap)
 
-| المستويات | التركيز التعليمي  | الحالة |
-| :-------- | :---------------- | :----: |
-| **0-5**   | التنقل والأساسيات |   ✅   |
-| **6-10**  | البحث والفلترة    |   ✅   |
-| **11-15** | معالجة البيانات   |   ✅   |
-| **16-20** | الشبكات والتشفير  |   ✅   |
+| المستويات   | الخبرة المكتسبة         | المنهجية                 | الحالة |
+| :---------- | :---------------------- | :----------------------- | :----: |
+| **0 - 10**  | أساسيات سطر الأوامر     | البحث الموجه             |   ✅   |
+| **11 - 15** | تلاعب البيانات المعقدة  | التفكيك والتحليل         |   ✅   |
+| **16 - 20** | أمن الشبكات والاتصال    | فحص المنافذ والتشفير     |   ✅   |
+| **21 - 34** | اختراق الأنظمة المتقدمة | أتمتة المهام والـ Setuid |   ✅   |
 
-### 💡 فلسفة الحل (بالبلدي)
+### 💡 كلمة للمتعلم (بالبلدي)
 
-إحنا مش بنحل وخلاص، إحنا بنتعلم إزاي نستخدم الـ Terminal كأنه جزء مننا. كل مستوى فيه شرح "بالبلدي" عشان يثبت المفهوم في دماغي ودماغك.
+إحنا مش بس بناخد الباسورد، إحنا بنتعلم إزاي نبقى "أسياد" الـ Terminal. كل مستوى هنا مشروح بدقة عشان تعرف "ليه" عملنا كدة مش بس "إيه" اللي كتبناه.
 
 ---
 
 ## 🇹🇷 Türkçe
 
-### 📖 Proje Hakkında
+### 📖 Proje Felsefesi
 
-Bu depo, **OverTheWire Bandit** wargame için metodoloji odaklı kapsamlı bir eğitim rehberidir. Amacımız sadece seviyeleri geçmek değil, Linux sisteminin mantığını kavramaktır.
+Bu depo, **OverTheWire Bandit** üzerinden siber güvenlik ve Linux mühendisliği temellerini profesyonel düzeyde kavramak için oluşturulmuştur. Ezbere dayalı çözümlerden kaçınan, sistem mantığını ön plana çıkaran bir rehberdir.
 
-### 🗺️ Yol Haritası
+### ⚙️ Teknik Yetkinlikler
 
-| Seviyeler | Odak Noktası        | Durum |
-| :-------- | :------------------ | :---: |
-| **0-5**   | Temel Navigasyon    |  ✅   |
-| **6-10**  | Filtreleme ve Arama |  ✅   |
-| **11-15** | Veri İşleme         |  ✅   |
-| **16-20** | Ağ Portları ve SSL  |  ✅   |
+- **Filtreleme**: `grep` ve `sort` ile veri madenciliği.
+- **Güvenlik**: İzinlerin (`chmod/chown`) ve `setuid` mekanizmalarının derinlemesine analizi.
 
 ---
 
-## 👤 Author / المؤلف / Yazar
+## 🧠 Masterclass Concepts / الدروس المتقدمة
 
-**Hamed Mohamed Abdelalim**
+| Topic                         | Direct Access                               |
+| :---------------------------- | :------------------------------------------ |
+| **SSH Secrets**               | [[SSH_Basics\|Explore Concept]]             |
+| **Permission Mastery**        | [[Permissions_Deep_Dive\|Explore Concept]]  |
+| **Data Piping & Redirection** | [[Piping_and_Redirection\|Explore Concept]] |
+| **Grep & Find Architecture**  | [[Find_and_Grep_Mastery\|Explore Concept]]  |
 
-- [GitHub](https://github.com/7amed3li)
-- [LinkedIn](https://www.linkedin.com/in/h-amedmohamed/)
+---
+
+## 👤 Lead Author: Hamed Mohamed Abdelalim
+
+### Cybersecurity Engineer | Backend Developer
 
 <div align="center">
-Built with ❤️ for the Global Security Community.
+
+[**GitHub Profile**](https://github.com/7amed3li) · [**LinkedIn Profile**](https://www.linkedin.com/in/7amed3li/)
+
+_"Knowledge is the only treasure that increases when shared."_
+
 </div>
