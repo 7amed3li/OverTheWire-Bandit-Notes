@@ -242,3 +242,28 @@ cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
     # 4. اقرأ الملف على جهازك المحلي
     cat readme
     ```
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Bypass `.bashrc` which logs you out immediately upon SSH login.
+
+### Command
+```bash
+ssh bandit18@bandit.labs.overthewire.org -p 2220 "cat readme"
+```
+
+### Explanation
+- When SSH connects with a command, it executes that command directly without starting an interactive shell
+- The `.bashrc` file (which contains `exit`) is not executed
+- This bypasses the logout trap
+
+### Alternative Methods
+- `ssh ... -t /bin/sh`: Start a different shell
+- `sftp`: File transfer protocol doesn't trigger `.bashrc`
+
+### Key Takeaways
+- **SSH Command Execution:** `ssh user@host "command"` runs command directly
+- **Restricted Shell Bypass:** Avoid malicious `.bashrc` by not starting interactive shell

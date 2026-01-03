@@ -211,3 +211,26 @@ bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 **الحكم النهائي:** من خلال فهم المنطق الديناميكي للبرنامج النصي ومحاكاته يدويًا، نجحنا في تحديد اسم الملف الذي تم نسخ كلمة السر إليه وقمنا بقراءة محتواه.
 
 **كلمة السر للمستوى `bandit23` هي: `0Zf11ioIjMVN551jX3CmStKLYqjk54Ga`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Analyze a cron script that uses dynamic filenames based on username.
+
+### Key Insight
+The script generates filename using: `echo I am user $myname | md5sum | cut -d ' ' -f 1`
+
+### Process
+1. Simulate the script for target user:
+   ```bash
+   echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+   8ca319486bfbbc3663ea0fbe81326349
+   ```
+2. Read the password: `cat /tmp/8ca319486bfbbc3663ea0fbe81326349`
+
+### Key Takeaways
+- **Dynamic Analysis:** Simulate script logic with target variables
+- **md5sum:** Creates unique hash from input string
+- **cut:** Extracts specific fields from output

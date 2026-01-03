@@ -413,4 +413,22 @@ wbWdlBxEir4CaE8LaPhauuOo6pwRmrDw
 1. **رسائل الخطأ هي صديقك:** رسائل مثل `Permission denied`، `port 22`، و `localhost is blocked` هي علامات إرشادية تخبرك بما هو الخطأ وكيف يجب أن تغير استراتيجيتك.
 2. **اعمل في البيئة الصحيحة:** خادم `bandit13` هو مكان العثور على الأداة. جهاز `Kali` هو مكان استخدام هذه الأداة. الخلط بين البيئات يؤدي إلى أخطاء مثل `command not found`.
 3. **معايير الأمان مهمة:** `chmod 600` ليس مجرد أمر، بل هو متطلب أساسي في الأنظمة الآمنة.
-4. **`Ctrl+C` مقابل `Ctrl+D`:** `Ctrl+C` **يقتل** العملية. `Ctrl+D` **ينهي** تدفق الإدخال (في حالتنا، يحفظ الملف). هذا الفارق البسيط كان مفتاح النجاح في هذا المستوى.
+4. **`Ctrl+C` مقابل `Ctrl+D`:** `Ctrl+C` **يقتل** العملية. `Ctrl+D` **ينهي** تدفق الإدخال (في حالتنا، يحفظ الملف). هذا الفارق البسيط كان مفتاح النجاح في هذا المستوى.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Use SSH private key authentication to connect to the next level.
+
+### Process
+1. Copy the private key from the Bandit server
+2. Save it locally and set permissions: `chmod 600 sshkey.private`
+3. Connect: `ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220`
+
+### Key Takeaways
+- **SSH Key Auth:** More secure than passwords; uses public/private key pairs
+- **Permissions:** Private keys MUST have `chmod 600` (owner read/write only)
+- **`-i` Flag:** Specifies identity file (private key) for SSH
+- **Ctrl+D vs Ctrl+C:** `Ctrl+D` ends input stream, `Ctrl+C` kills process

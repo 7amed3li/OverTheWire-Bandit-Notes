@@ -127,3 +127,25 @@ SSH, `bandit26` kullanıcısı olarak oturum açtı, ancak kısıtlı kabuğu ç
 قام `ssh` بتسجيل الدخول كمستخدم `bandit26`، ولكن بدلاً من تشغيل الصدفة المقيدة، قام مباشرة بتنفيذ الأمر `cat`. أدى هذا إلى طباعة محتوى ملف كلمة السر في الطرفية الخاصة بنا، ثم تم إغلاق الاتصال. لقد تجاوزنا فخ الصدفة المقيدة بالكامل.
 
 **كلمة السر للمستوى `bandit26` هي: `**`s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ`**`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Bypass a restricted shell using SSH direct command execution.
+
+### Command
+```bash
+ssh -i bandit26.key bandit26@bandit.labs.overthewire.org -p 2220 "cat /etc/bandit_pass/bandit26"
+```
+
+### Explanation
+- The restricted shell exits immediately on login
+- By adding a command at the end of SSH, it executes directly without starting the shell
+- This bypasses the restricted shell entirely
+
+### Key Takeaways
+- **SSH Command Execution:** Same technique as Level 18
+- **Restricted Shell Bypass:** When shell is broken, execute commands directly
+- **Direct Reading:** Read password file without needing interactive access

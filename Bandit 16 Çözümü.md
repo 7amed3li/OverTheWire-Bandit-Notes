@@ -459,3 +459,21 @@ Disconnected from 127.0.0.1 port 2220
     
 
 **النتيجة:** **تم اختراق الهدف بنجاح!**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the correct SSL port in range 31000-32000 and get an SSH private key.
+
+### Process
+1. Scan ports: `nmap -p 31000-32000 localhost`
+2. Test each open port with: `echo "password" | openssl s_client -connect localhost:PORT -quiet`
+3. Correct port returns an SSH private key
+4. Save key, `chmod 600`, and use for SSH
+
+### Key Takeaways
+- **Port Scanning:** Use `nmap` to find open ports
+- **Echo Servers:** Some ports just echo back (decoys)
+- **External Connection:** Use the key from your machine, not from Bandit server

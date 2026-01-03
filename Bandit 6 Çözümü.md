@@ -98,3 +98,31 @@ morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
 *   **البحث بالـ Metadata:** فهمت إني مش بس بدور على الملفات باسمها، لأ، أنا ممكن أدور عليها بخصائصها التانية زي المالك والجروب والحجم والصلاحيات (ودي بنسميها metadata أو بيانات عن البيانات).
 *   **إعادة توجيه الأخطاء (`2>/dev/null`):** اتعلمت إزاي أخلي ناتج الأوامر بتاعتي نضيف، وإزاي أخفي رسايل الخطأ عشان أركز بس على النتايج المهمة. دي حركة مهمة جدًا خصوصًا في عمليات البحث الكبيرة.
 *   **تركيبة الفولدرات في لينكس:** شفت إن كلمة السر ممكن تكون مستخبية في مكان غريب زي `/var/lib/dpkg/info/`. ده بيخليني أفهم أهمية إني أتعلم أكتر عن تركيبة الفولدرات القياسية في لينكس (FHS).
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the password file anywhere on the server with these properties:
+- Owner: `bandit7`
+- Group: `bandit6`
+- Size: 33 bytes
+
+### Command
+```bash
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+/var/lib/dpkg/info/bandit7.password
+```
+
+### Explanation
+- `find /`: Search from root (entire filesystem)
+- `-user bandit7`: Files owned by bandit7
+- `-group bandit6`: Files belonging to group bandit6
+- `-size 33c`: Exactly 33 bytes
+- `2>/dev/null`: Suppress "Permission denied" errors
+
+### Key Takeaways
+- **System-wide Search:** Use `find /` to search the entire server
+- **Metadata Search:** Find files by owner, group, size, permissions
+- **Error Redirection:** `2>/dev/null` hides errors for cleaner output

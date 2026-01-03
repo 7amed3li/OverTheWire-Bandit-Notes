@@ -197,3 +197,26 @@ bandit19@bandit:~$ ./bandit20-do cat /etc/bandit_pass/bandit20
     ```
     
     هذه الطريقة أقوى بكثير عندما نريد فتح جلسة تفاعلية كمستخدم مستهدف بدلاً من مجرد تنفيذ أمر واحد.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Use a SUID binary to read a file owned by another user.
+
+### Command
+```bash
+./bandit20-do cat /etc/bandit_pass/bandit20
+0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+```
+
+### Explanation
+- **SUID bit (s):** When set on an executable, it runs with the owner's permissions
+- `bandit20-do` is owned by `bandit20` with SUID set
+- Running it gives us `bandit20`'s privileges to read the password file
+
+### Key Takeaways
+- **SUID:** Programs with `s` in permissions run as the file owner
+- **Privilege Escalation:** SUID binaries are common attack vectors
+- **Check:** Use `ls -la` to spot SUID bits

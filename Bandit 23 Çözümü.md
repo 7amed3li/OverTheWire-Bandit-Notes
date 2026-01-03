@@ -216,3 +216,28 @@ gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
 **الحكم النهائي:** من خلال استغلال شرط ضعيف (التحقق من مالك الملف) في برنامج نصي يتم تشغيله بواسطة `cron`، نجحنا في جعل مستخدم بصلاحيات أعلى (`bandit24`) يقوم بتشغيل كود من إعدادنا، وبالتالي تمكنا من سرقة كلمة السر للمستوى التالي.
 
 **كلمة السر للمستوى `bandit24` هي: `gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Write a custom script that gets executed by a cron job running as `bandit24`.
+
+### Process
+1. Create a script that copies the password to a readable location
+2. Place script in `/var/spool/bandit24/foo/`
+3. Wait for cron to execute it
+4. Read the output file
+
+### Script Example
+```bash
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/mypassword.txt
+chmod 644 /tmp/mypassword.txt
+```
+
+### Key Takeaways
+- **Code Injection:** Make higher-privileged users run your code
+- **Permissions:** Ensure output files are readable
+- **Cron Exploitation:** Monitor `/var/spool/` for writable directories

@@ -116,3 +116,31 @@ bandit4@bandit:~/inhere$ cat ./-file07
 *   **أمر `file`:** اتعلمت قد إيه أمر `file` ده قوي ومفيد عشان أعرف نوع أي ملف بسرعة (سواء كان نص، صورة، برنامج، ...إلخ) من غير ما أضطر أفتحه.
 *   **الـ Wildcards (زي `*`):** فهمت إن الـ wildcards زي النجمة `*` بتوفر وقت ومجهود كبير جدًا لما أكون عايز أطبق أمر معين على ملفات كتير في نفس الوقت.
 *   **أنواع البيانات:** اتعلمت إن الملفات مش كلها نصوص بس، في أنواع تانية زي "البيانات" (data) أو الملفات الثنائية (binary)، ودي بتكون بيانات مش مفهومة لو حاولت تقراها مباشرة كأنها نص.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the only human-readable text file among many files in the `inhere` directory.
+
+### Method
+Use the `file` command to determine each file's type quickly without opening them.
+
+### Commands
+```bash
+cd inhere
+file ./*
+cat ./-file07
+```
+
+### Output Analysis
+```
+./-file07: ASCII text   # This is the human-readable file!
+./-file00: data         # Binary data, not readable
+```
+
+### Key Takeaways
+- **`file` Command:** Quickly identifies file types (text, image, binary, etc.) without opening them
+- **Wildcards (`*`):** Apply commands to multiple files at once
+- **Data Types:** Not all files are text; some contain binary data that's meaningless when read as text

@@ -210,3 +210,25 @@ The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
 4.  **ابنِ الأمر:** اجمع الأداة مع الخيارات الصحيحة (`-d`) وطريقة تمرير البيانات (`|` أو `<`) لحل المشكلة.
 
 هذه هي الطريقة التي تحول بها المعلومات إلى حلول.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Decode Base64 encoded data in `data.txt`.
+
+### Command
+```bash
+base64 -d < data.txt
+The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+```
+
+### Explanation
+- `base64 -d`: Decode Base64 encoded data
+- `< data.txt`: Input redirection from file
+
+### Key Takeaways
+- **Base64:** Common encoding (not encryption!) for ASCII representation of binary data
+- **Decoding:** Use `base64 -d` to decode
+- **Methodology:** Examine → Analyze patterns → Find tool → Execute

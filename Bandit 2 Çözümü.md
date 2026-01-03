@@ -95,4 +95,31 @@ cat ./--spaces\ in\ this\ filename--
 
 ---
 
-إذا كنت تريد أي تغيير أو تعديل في هذا الشرح، فقط أخبرني. على سبيل المثال، هل تريد الشرح أن يكون أكثر تفصيلاً؟ أم أبسط؟ أم هل هناك مصطلح معين تريد شرحه بشكل مختلف؟
+## 🇺🇸 English
+
+### Objective
+Read a file that contains both **spaces** and **double dashes** (`--`) in its name. This requires solving two problems simultaneously.
+
+### Possible Methods
+*   **Method A:** Use quotes (`" "`) to preserve spaces AND use double dash (`--`) to stop option parsing
+*   **Method B:** Use relative path (`./`) to specify it's a file AND escape each space with backslash (`\`)
+
+### Commands
+
+**Method A:**
+```bash
+cat -- "--spaces in this filename--"
+```
+- `--`: Tells `cat` that everything after this is a filename, not an option
+- `"..."`: Makes the shell treat the entire string as a single argument
+
+**Method B:**
+```bash
+cat ./--spaces\ in\ this\ filename--
+```
+- `./`: Specifies the file is in the current directory, also prevents `--` from being interpreted as an option
+- `\`: Escapes each space, making it part of the filename
+
+### Key Takeaways
+- **Tab Completion:** In complex cases, typing `cat --s` and pressing `Tab` lets the shell auto-complete the correct command
+- **Problem Decomposition:** A problem can have multiple layers (spaces + dashes), and each layer needs to be addressed

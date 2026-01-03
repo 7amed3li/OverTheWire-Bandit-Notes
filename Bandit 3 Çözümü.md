@@ -118,3 +118,28 @@ MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 *   **قوة اختيار `-a`:** اختيار `-a` مع أمر `ls` (زي `ls -a` أو `ls -la`) بيعرض **كل حاجة** بتبدأ بنقطة، زي `.` (الفولدر الحالي) و `..` (الفولدر اللي قبله) وأي ملفات مخفية تانية. ده اختيار مهم جدًا عشان تفهم تركيبة الفولدرات صح.
 *   **الثقة في اللي بتشوفه:** لازم أثق دايمًا في ناتج الأوامر اللي أنا بكتبها بنفسي، مش على افتراضات أو معلومات قديمة. اللي أنا بشوفه بعيني على الشاشة هو ده الحقيقة.
 *   **علامات التنصيص:** لما أتعامل مع أسماء ملفات فيها حروف غريبة أو مسافات، دايمًا من الأمان إني أحط الاسم بين علامات تنصيص (`" "`) عشان أتجنب أي مشاكل.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the password stored in a "hidden" file (starting with `.`) inside the `inhere` directory.
+
+### Method
+1. Use `ls -la` to list all files including hidden ones
+2. Navigate to `inhere` directory with `cd`
+3. Use `ls -la` again to find hidden files
+4. Read the file with `cat`
+
+### Commands
+```bash
+cd inhere
+ls -la
+cat "...Hiding-From-You"
+```
+
+### Key Takeaways
+- **Hidden Files:** In Linux, a file is "hidden" if its name starts with a single dot (`.`)
+- **`-a` Flag:** The `ls -a` command shows everything starting with `.`, including hidden files
+- **Quotes:** Always use quotes (`" "`) for filenames with special characters

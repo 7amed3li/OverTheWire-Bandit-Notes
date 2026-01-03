@@ -109,3 +109,29 @@ HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
 *   **قوة أمر `find`:** اتعلمت قد إيه أمر `find` ده جبار ومرن، وإنه بيقدر يعمل عمليات بحث معقدة جدًا في كل ملفات النظام.
 *   **شروط البحث في `find`:** فهمت إني ممكن أدمج شروط كتير مع بعض زي `-type` و `-size` و `-name` و `-perm` عشان أفلتر نتايج البحث وأوصل للي أنا عايزه بالضبط.
 *   **أهمية الوحدات:** اتعلمت إن لما بستخدم اختيار زي `-size` مع أمر `find`، مهم جدًا أحدد الوحدة اللي بقيس بيها، زي `c` (بايت)، `k` (كيلوبايت)، `M` (ميجابايت).
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find a file in nested directories with these properties:
+- Human-readable
+- Size: 1033 bytes
+- Not executable
+
+### Command
+```bash
+find . -type f -size 1033c
+./maybehere07/.file2
+```
+
+### Explanation
+- `find .`: Start searching from current directory
+- `-type f`: Only files (not directories)
+- `-size 1033c`: Exactly 1033 bytes (`c` = characters/bytes)
+
+### Key Takeaways
+- **`find` Power:** Extremely flexible for complex file system searches
+- **Combining Tests:** Chain multiple conditions (`-type`, `-size`, `-name`, `-perm`)
+- **Size Units:** `c` (bytes), `k` (kilobytes), `M` (megabytes)

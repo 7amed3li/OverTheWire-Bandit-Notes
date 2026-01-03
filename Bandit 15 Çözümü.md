@@ -234,3 +234,25 @@ verify return:1
 Correct!
 kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
 ```
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Submit the password to an SSL/TLS encrypted service on port 30001.
+
+### Command
+```bash
+echo "8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo" | openssl s_client -connect localhost:30001 -quiet
+```
+
+### Explanation
+- `openssl s_client`: Creates SSL/TLS connection (like HTTPS)
+- `-connect localhost:30001`: Target host and port
+- `-quiet`: Suppresses certificate details for cleaner output
+
+### Key Takeaways
+- **SSL/TLS:** Encrypted communication layer; `nc` won't work for this
+- **openssl s_client:** Tool for connecting to SSL-enabled services
+- **Self-signed Certificates:** May show warnings but still work

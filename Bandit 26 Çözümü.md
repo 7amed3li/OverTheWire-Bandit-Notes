@@ -74,4 +74,26 @@ YnQpBuifNMas1hcUFk70Zmq13378j0VO
 **Nihai Karar:**
 `bandit27-do` programı, `cat /etc/bandit_pass/bandit27` komutunu aldı ve `bandit27` kullanıcısının yetkileriyle çalıştırdı. `bandit26` kullanıcısı normalde bu dosyayı okuma iznine sahip olmasa da, `setuid` programı sayesinde bu kısıtlamayı aştık ve şifreyi başarıyla elde ettik.
 
-**`bandit27` seviyesinin şifresi: `YnQpBuifNMas1hcUFk70Zmq13378j0VO`**
+**`bandit27` seviyesinin şifresi: `upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Use another SUID binary to read the next password.
+
+### Command
+```bash
+./bandit27-do cat /etc/bandit_pass/bandit27
+YnQpBuifNMas1hcUFk70Zmq13378j0VO
+```
+
+### Explanation
+- Same concept as Level 19
+- `bandit27-do` is SUID-enabled, runs as `bandit27`
+- Execute `cat` to read the protected password file
+
+### Key Takeaways
+- **SUID Exploitation:** Common privilege escalation technique
+- **Run commands as another user:** The core purpose of SUID helpers

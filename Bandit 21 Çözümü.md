@@ -223,3 +223,21 @@ tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
 في هذه البيئة تحديدًا، لا نملك صلاحية عرض محتويات المجلد `/tmp` مباشرة باستخدام أوامر مثل `ls` أو `find`. هذه حماية أمنية وضعتها OverTheWire لمنع اللاعبين من رؤية ملفات بعضهم البعض المؤقتة. لهذا السبب، تفشل طرق مثل مراقبة المجلد (`watch`) أو البحث فيه عن ملفات تم تعديلها حديثًا (`find`) وتعطي خطأ "Permission denied".
 
 هذا يوضح أن الطريقة الوحيدة الصالحة لحل هذا المستوى هي تحليل البرنامج النصي لمعرفة **الاسم الكامل** للملف، ثم قراءته مباشرة.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Exploit a cron job to read a file containing the next password.
+
+### Process
+1. Check cron jobs: `cat /etc/cron.d/cronjob_bandit22`
+2. Read the script: `cat /usr/bin/cronjob_bandit22.sh`
+3. Find where password is copied: `/tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+4. Read the file: `cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv`
+
+### Key Takeaways
+- **Cron:** Scheduled tasks in `/etc/cron.d/`
+- **Analysis:** Read scripts to understand what they do
+- **Information Leakage:** Scripts may copy sensitive data to readable locations

@@ -175,3 +175,26 @@ Correct!
 ```
 
 **لقد نجحنا!** أكد الخادم أن كلمة المرور صحيحة وأعطانا كلمة مرور المستوى التالي (`bandit15`): `8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo`.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Submit the current password to a service listening on port 30000 to get the next password.
+
+### Command
+```bash
+echo "MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS" | nc localhost 30000
+Correct!
+8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+```
+
+### Explanation
+- `nc localhost 30000`: Connect to port 30000 on localhost
+- `echo "..." |`: Pipe the password to the service
+
+### Key Takeaways
+- **Netcat (`nc`):** Swiss army knife for network connections
+- **localhost:** Refers to the current machine (127.0.0.1)
+- **Port:** Virtual door for network services

@@ -94,3 +94,31 @@ bandit8@bandit:~$ sort data.txt | uniq -c | grep " 1 "
 *   **سلسلة الأوامر (Piping):** اتعلمت إزاي أستخدم علامة `|` (الـ pipe) عشان أربط أوامر بسيطة ببعض وأخليهم يشتغلوا مع بعض كـ "خط أنابيب" قوي يقدر يعمل عمليات معالجة بيانات معقدة.
 *   **الشراكة بين `sort` و `uniq`:** فهمت إن القوة الحقيقية لأمر `uniq` بتظهر بس لما البيانات تكون مترتبة الأول باستخدام `sort`. الثنائي ده بيستخدم كتير جدًا في تنضيف وتحليل البيانات.
 *   **اختيارات `uniq`:** اتعلمت إن أمر `uniq` عنده اختيارات مفيدة زي `-u` (عشان تجيب السطور الفريدة) و `-c` (عشان تعد التكرارات)، وكل واحد فيهم مفيد في سيناريو مختلف.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the only non-repeating line in `data.txt`.
+
+### Command
+```bash
+sort data.txt | uniq -u
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+```
+
+### Alternative (with count)
+```bash
+sort data.txt | uniq -c | grep " 1 "
+```
+
+### Explanation
+- `sort`: Sorts lines alphabetically (required for `uniq`)
+- `uniq -u`: Shows only unique (non-repeating) lines
+- `uniq -c`: Shows count of occurrences for each line
+
+### Key Takeaways
+- **Piping Commands:** Use `|` to chain simple commands into powerful pipelines
+- **sort + uniq Partnership:** `uniq` only works correctly on sorted data
+- **uniq Options:** `-u` for unique lines, `-c` for counting occurrences

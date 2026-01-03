@@ -270,3 +270,28 @@ Q========== is%
 2. **شخّص:** افهم طبيعة المشكلة (نصي أم ثنائي؟) باستخدام `file` و `cat`.
 3. **خطط:** بناءً على الهدف والتشخيص، اختر الأدوات المناسبة من صندوق أدواتك الذهني (`strings`, `grep`).
 4. **نفّذ:** ادمج الأدوات باستخدام الماسورة (`|`) لإنشاء حل فعال وقوي.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find human-readable strings in a binary data file, looking for lines preceded by several `=` characters.
+
+### Command
+```bash
+strings data.txt | grep "===="
+========== the
+========== password
+Q========== is%
+>u`9J========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+```
+
+### Explanation
+- `strings`: Extracts printable character sequences from binary files
+- `grep "===="`: Filters for lines containing the pattern
+
+### Key Takeaways
+- **Binary vs Text:** Binary files contain non-printable data; `strings` extracts the readable parts
+- **Methodology:** Explore → Diagnose → Plan → Execute
+- **Tool Chaining:** Combine `strings` and `grep` with pipe for effective filtering

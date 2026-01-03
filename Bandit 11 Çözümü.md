@@ -308,3 +308,25 @@ Amaç: İşlemi tersine çevirmek. Her şifreli harfi 3 pozisyon geri kaydırmak
     *   **Tam Komut:** `tr 'd-za-cD-ZA-C' 'a-zA-Z'`
 
 **Sonuç:** Şifre çözme, `tr` komutundaki girdi ve çıktı kümelerinin yerini değiştirerek şifreleme işlemini tersine çevirmekten ibarettir.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Decode ROT13 encoded data in `data.txt`.
+
+### Command
+```bash
+cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
+The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+```
+
+### Explanation
+- `tr 'A-Za-z' 'N-ZA-Mn-za-m'`: Translates characters by shifting 13 positions
+- ROT13 is its own inverse (apply twice = original)
+
+### Key Takeaways
+- **ROT13:** Simple substitution cipher (shift by 13 positions)
+- **`tr` Command:** Powerful character translation tool
+- **Pattern:** `tr 'original-set' 'replacement-set'`

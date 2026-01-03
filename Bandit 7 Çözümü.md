@@ -82,3 +82,30 @@ millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
 *   **الاستخدام الأساسي لأمر `grep`:** اتعلمت قد إيه أمر `grep` ده أساسي وقوي، وإنه بيخليني ألاقي أي معلومة بسرعة جدًا جوه الملفات الكبيرة.
 *   **الـ Pipe (`|`) ضد الـ Argument:** فهمت إن الأمر ممكن ياخد الملف كـ argument (زي `grep "كلمة" file.txt`)، أو ممكن يستقبل البيانات من خلال الـ pipe (زي `cat file.txt | grep "كلمة"`). وعرفت إن الطريقة الأولى غالبًا بتكون أكفأ وأسرع.
 *   **أسلوب حل المشاكل:** طورت قدرتي على تحليل المشكلة، وإني أبص على قائمة الأدوات المتاحة عندي، وأختار الأداة الأنسب للمهمة اللي قدامي.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the password next to the word "millionth" in a large text file called `data.txt`.
+
+### Command
+```bash
+grep "millionth" data.txt
+millionth       dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+```
+
+### Alternative (Using Pipe)
+```bash
+cat data.txt | grep "millionth"
+```
+
+### Explanation
+- `grep`: Searches for lines containing a pattern
+- The first method is more efficient (passes filename as argument)
+- The second method uses pipe but adds an extra step
+
+### Key Takeaways
+- **`grep` Basics:** Essential tool for finding specific content in large files
+- **Pipe vs Argument:** `grep "word" file` is faster than `cat file | grep "word"`

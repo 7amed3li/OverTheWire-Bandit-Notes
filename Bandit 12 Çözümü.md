@@ -334,6 +334,28 @@ echo "--- تم العثور على الحل! ---" && cat file
 
 الدرس الحقيقي في هذا المستوى هو **قوة الأتمتة (Automation)**.
 
-1. **نفذ يدويًا أولاً:** قم بالعملية يدويًا مرة أو مرتين لفهم المشكلة.
-2. **لاحظ النمط:** عندما تلاحظ نمطًا متكررًا (`file` -> `decompress`)، فهذه إشارة للأتمتة.
-3. **أتمِت العملية:** حوّل المهمة المتكررة إلى سكريبت لتوفير الوقت والقضاء على الأخطاء البشرية. هذا هو الفارق بين مجرد حل المشاكل وبين إدارة الأنظمة كخبير.
+1. **نفذ يدويًا أولاً:** قم بالعملية يدويًا مرة أو مرتين لفهم المشكلة.
+2. **لاحظ النمط:** عندما تلاحظ نمطًا متكررًا (`file` -> `decompress`)، فهذه إشارة للأتمتة.
+3. **أتمِت العملية:** حوّل المهمة المتكررة إلى سكريبت لتوفير الوقت والقضاء على الأخطاء البشرية. هذا هو الفارق بين مجرد حل المشاكل وبين إدارة الأنظمة كخبير.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Decompress a repeatedly compressed hexdump file to find the password.
+
+### Process
+1. Convert hexdump to binary: `xxd -r data.txt > file`
+2. Check file type: `file file`
+3. Decompress based on type:
+   - gzip: `mv file temp.gz && gzip -d temp.gz`
+   - bzip2: `mv file temp.bz2 && bzip2 -d temp.bz2`
+   - tar: `tar -xf file`
+4. Repeat steps 2-3 until you get ASCII text
+
+### Key Takeaways
+- **Hexdump:** Binary represented as hex; use `xxd -r` to reverse
+- **Compression Tools:** `gzip`, `bzip2`, `tar` for different formats
+- **Automation:** Repetitive tasks can be scripted for efficiency
+```

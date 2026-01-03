@@ -87,3 +87,33 @@ cat < -
 
 *   **الحروف الخاصة:** فهمت إن في حروف معينة في سطر الأوامر زي (`-` و `<` و `>`) ليها معنى خاص، واتعلمت إزاي أتعامل معاها أو أتحايل عليها بطرق مختلفة.
 *   **أهمية المسارات (Paths):** اكتشفت إن تحديد مسار الملف بوضوح (زي استخدام `./`) ممكن يغير تمامًا طريقة فهم الكمبيوتر للأمر. دي طريقة قوية جدًا عشان نمنع أي لخبطة أو سوء فهم.
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Read a file named `-` (dash) in the current directory. This filename has special meaning in the command line, so it cannot be read directly with `cat -`.
+
+### Possible Methods
+*   **Method A:** Use a relative path (`./`) indicating the file is in the current directory. This signals to the shell to interpret `-` as a filename.
+*   **Method B:** Use shell input redirection (`<`) to "feed" the file contents to the `cat` command.
+
+### Commands
+
+**Method A (Using relative path):**
+```bash
+cat ./-
+```
+- `cat`: Command to read files
+- `./`: Tells the shell we're referring to a file in the current directory, overriding the special meaning of `-`
+
+**Method B (Using input redirection):**
+```bash
+cat < -
+```
+- `<`: Input redirection operator. Takes the contents of the file named `-` and feeds it to `cat`
+
+### Key Takeaways
+- **Special Characters:** Characters like `-`, `<`, `>` have special meanings in the command line. Learned techniques to override these meanings.
+- **Importance of Paths:** Explicitly specifying a file path (`./`) can change how commands interpret arguments.

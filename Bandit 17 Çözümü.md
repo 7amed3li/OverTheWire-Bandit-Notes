@@ -188,3 +188,28 @@ bandit17@bandit:~$ diff passwords.old passwords.new
 **الحكم النهائي:** الأمر `diff` يخبرنا بوضوح أن الاختلاف الوحيد بين الملفين هو في السطر 42. السطر الجديد في ملف `passwords.new` هو كلمة السر التي نبحث عنها.
 
 **كلمة السر للمستوى `bandit18` هي: `x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Find the only line that differs between `passwords.old` and `passwords.new`.
+
+### Command
+```bash
+diff passwords.old passwords.new
+42c42
+< pGozC8kOHLkBMOaL0ICPvLV1IjQ5F1VA
+---
+> x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
+```
+
+### Explanation
+- `diff`: Compares two files line by line
+- `42c42`: Line 42 was changed
+- `<`: Content from first file (old)
+- `>`: Content from second file (new) - **This is the password**
+
+### Key Takeaways
+- **`diff` Command:** Essential for comparing files and finding changes

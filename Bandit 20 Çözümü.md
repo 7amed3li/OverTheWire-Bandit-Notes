@@ -233,3 +233,25 @@ bandit20@bandit:~$ ./suconnect 8080
 **الحكم النهائي:** لقد قمنا بخداع برنامج `suconnect` ليتصل بخادم `netcat` الذي نتحكم فيه. أرسلنا كلمة السر الصحيحة، وتلقينا كلمة السر الجديدة في المقابل.
 
 **كلمة السر للمستوى `bandit21` هي: `EeoULMCra2q0dSkYj561DX7s1CpBuOBt`**
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Use a SUID program that connects to a port and exchanges passwords.
+
+### Process (Two Terminals)
+1. **Terminal 1:** Start listener: `nc -l -p 8080`
+2. **Terminal 2:** Run SUID: `./suconnect 8080`
+3. **Terminal 1:** Type current password and press Enter
+4. **Terminal 1:** Receive next password
+
+### Explanation
+- `suconnect` connects to specified port, reads password, validates it, and sends next password
+- We create a fake server with `nc` to interact with it
+
+### Key Takeaways
+- **Client-Server:** Use `nc -l` to create a listening server
+- **Two Terminals:** Some challenges need multiple sessions
+- **Background Jobs:** Can use `&` to run commands in background

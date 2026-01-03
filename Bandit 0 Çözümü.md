@@ -34,3 +34,28 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 - **SSH Basics**: Uzak sunuculara güvenli bağlantı kurmayı öğrendik.
 - **Port Specification**: `-p` bayrağı ile varsayılan dışındaki portlara bağlanmayı keşfettik.
 - **Authentication**: İlk defa bir "wargame" dünyasına giriş yaptık!
+
+---
+
+## 🇺🇸 English
+
+### Objective
+Connect to the Bandit server using SSH.
+
+### Methodology
+To access any remote server, we use the SSH protocol. In this level, we learn how to use the `ssh` command with specifying the user, host, and port.
+
+### Command
+```bash
+ssh bandit0@bandit.labs.overthewire.org -p 2220
+```
+
+### Explanation
+- `ssh`: The program that establishes the connection
+- `bandit0@...`: The username we're logging in with
+- `-p 2220`: Specifies the port (since default is 22, but Bandit uses 2220)
+
+### Key Takeaways
+- **SSH Basics**: Learned how to establish secure connections to remote servers
+- **Port Specification**: Discovered how to connect to non-default ports using `-p` flag
+- **Authentication**: Made our first entry into the "wargame" world!
