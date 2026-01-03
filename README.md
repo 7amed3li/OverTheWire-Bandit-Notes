@@ -19,6 +19,20 @@
 
 ---
 
+## 📋 Quick Cheat Sheets (Choose Your Language!)
+
+<div align="center">
+
+| 🇪🇬 العربية | 🇺🇸 English | 🇹🇷 Türkçe |
+|:----------:|:-----------:|:----------:|
+| [**Cheat Sheet AR**](Cheat_Sheet_AR.md) | [**Cheat Sheet EN**](Cheat_Sheet_EN.md) | [**Cheat Sheet TR**](Cheat_Sheet_TR.md) |
+
+📚 [**Complete Reference**](Complete_Cheat_Sheet.md) · 📝 [**Quick Reference**](Quick_Reference.md)
+
+</div>
+
+---
+
 ## 🇺🇸 English
 
 ### 🎯 Pro Objective
@@ -78,6 +92,16 @@ Bu depo, **OverTheWire Bandit** üzerinden siber güvenlik ve Linux mühendisli�
 | **Permission Mastery**        | [[Permissions_Deep_Dive\|Explore Concept]]  |
 | **Data Piping & Redirection** | [[Piping_and_Redirection\|Explore Concept]] |
 | **Grep & Find Architecture**  | [[Find_and_Grep_Mastery\|Explore Concept]]  |
+| **Git Fundamentals**          | [[Git_Fundamentals\|Explore Concept]]       |
+| **Networking Basics**         | [[Networking_Basics\|Explore Concept]]      |
+| **Cron Jobs Exploitation**    | [[Cron_Jobs\|Explore Concept]]              |
+
+---
+
+## 📋 Quick Reference
+
+> [!TIP]
+> Need a quick refresher? Check out the **[Quick Reference Card](Quick_Reference.md)** for a summary of all levels and essential commands!
 
 ---
 
