@@ -111,7 +111,7 @@ Bu depo, **OverTheWire Bandit** üzerinden siber güvenlik ve Linux mühendisli�
 
 <div align="center">
 
-[**GitHub Profile**](https://github.com/7amed3li) · [**LinkedIn Profile**]([https://www.linkedin.com/in/7amed3li/](https://www.linkedin.com/in/h-amedmohamed/))
+([**GitHub Profile**](https://github.com/7amed3li) · [**LinkedIn Profile**](https://www.linkedin.com/in/h-amedmohamed/))
 
 _"Knowledge is the only treasure that increases when shared."_
 
