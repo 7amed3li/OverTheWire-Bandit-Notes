@@ -186,6 +186,45 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
 
 ---
 
+### 📝 Test Soruları (MCQs)
+
+1. **`xxd -r` komutunun temel işlevi nedir?**
+   - A) Dosyayı hexdump formatına çevirir.
+   - B) Hexdump formatındaki veriyi tekrar orijinal ikili (binary) haline getirir.
+   - C) Dosyayı şifreler.
+   - D) Dosya boyutunu küçültür.
+   *(Cevap: B)*
+
+2. **Bir dosyanın hangi yöntemle (gzip, bzip2, tar vb.) sıkıştırıldığını kesin olarak öğrenmek için en güvenilir komut hangisidir?**
+   - A) `ls -l`
+   - B) `cat`
+   - C) `file`
+   - D) `stat`
+   *(Cevap: C)*
+
+3. **SSH ile bağlanırken şifre yerine bir Private Key (Özel Anahtar) dosyası kullanmak için hangi parametre eklenir?**
+   - A) `-p`
+   - B) `-k`
+   - C) `-i`
+   - D) `-s`
+   *(Cevap: C)*
+
+4. **SSL/TLS ile korunan (شفرة) bir ağ portuna bağlanmak için `nc` yerine hangi araç ve komut tercih edilmelidir?**
+   - A) `ssh -p`
+   - B) `openssl s_client -connect`
+   - C) `telnet`
+   - D) `curl -X`
+   *(Cevap: B)*
+
+5. **Ağdaki belirli bir port aralığını (örneğin 31000-32000) hızlıca tarayıp hangi servislerin çalıştığını görmek için hangi araç kullanılır?**
+   - A) `grep`
+   - B) `nmap`
+   - C) `ifconfig`
+   - D) `netstat`
+   *(Cevap: B)*
+
+---
+
 ## 🛡️ Group 4: Permissions & Tools (Levels 17-20) | İzinler ve Araçlar (Seviye 17-20)
 
 ### 📋 الملخص (Özet)
@@ -211,6 +250,45 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
 
 ---
 
+### 📝 Test Soruları (MCQs)
+
+1. **`diff` komutu iki dosyayı karşılaştırırken `<` sembolü neyi ifade eder?**
+   - A) İkinci dosyada olup birinci dosyada olmayan satırı.
+   - B) Birinci dosyada olup ikinci dosyada olmayan satırı.
+   - C) Her iki dosyada da aynı olan satırı.
+   - D) Dosyanın silindiğini.
+   *(Cevap: B)*
+
+2. **Giriş yaptıktan hemen sonra kapanan kısıtlı bir kabuğu (shell) aşmak için SSH komutuna ne eklenmelidir?**
+   - A) `-v` (verbose mode)
+   - B) SSH komutunun sonuna tırnak içinde çalıştırılacak komut eklenmelidir (örn: `"cat readme"`).
+   - C) `-p 22` eklenmelidir.
+   - D) Kullanıcı adının başına `sudo` eklenmelidir.
+   *(Cevap: B)*
+
+3. **Bir dosyanın "SetUID" bitine sahip olması ne anlama gelir?**
+   - A) Dosya sadece root tarafından okunabilir.
+   - B) Dosya çalıştırıldığında, dosyayı çalıştıran kişinin değil, dosya sahibinin yetkileriyle çalışır.
+   - C) Dosya çalıştırılamaz.
+   - D) Dosya gizli bir dosyadır.
+   *(Cevap: B)*
+
+4. **`ls -l` çıktısında bir dosyanın izinler kısmında (rwx...) `s` harfi görülmesi neyi gösterir?**
+   - A) Dosyanın silinebilir olduğunu.
+   - B) Dosyanın paylaşımlı (shared) olduğunu.
+   - C) Dosyanın SetUID veya SetGID bitine sahip olduğunu.
+   - D) Dosyanın sistem dosyası olduğunu.
+   *(Cevap: C)*
+
+5. **`bandit20-do` gibi bir SetUID programı, normalde erişemediğiniz bir şifre dosyasını okuyabiliyorsa bunun sebebi nedir?**
+   - A) Programın şifresiz olması.
+   - B) Programın sahibinin (owner) o şifre dosyasına erişim yetkisinin olması.
+   - C) İnternet bağlantısının olması.
+   - D) Programın یک virüs olması.
+   *(Cevap: B)*
+
+---
+
 ## ⚙️ Group 5: Automation & Scripts (Levels 21-25) | Otomasyon ve Scriptler (Seviye 21-25)
 
 ### 📋 الملخص (Özet)
@@ -230,6 +308,45 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
 
 ---
 
+### 📝 Test Soruları (MCQs)
+
+1. **Linux sistemlerde `/etc/cron.d/` dizini ne için kullanılır?**
+   - A) Sistem loglarını saklamak için.
+   - B) Kullanıcı şifrelerini tutmak için.
+   - C) Zamanlanmış görevlerin (cron jobs) tanımlarını saklamak için.
+   - D) Yeni kullanıcı oluşturmak için.
+   *(Cevap: C)*
+
+2. **Bir ağ servisine 4 haneli bir PIN (0000-9999) ile Brute Force saldırısı yapmak için en uygun Bash döngüsü hangisidir?**
+   - A) `if [ i -eq 10000 ]`
+   - B) `for i in {0000..9999}`
+   - C) `while true; do break; done`
+   - D) `case $i in 0000..9999`
+   *(Cevap: B)*
+
+3. **`more` komutu ile bir dosyayı okurken, terminal ekranı içerikten küçükse dosyanın içinde düzenleme yapmak (Vim'e geçmek) için hangi tuşa basılır?**
+   - A) `q`
+   - B) `esc`
+   - C) `v`
+   - D) `enter`
+   *(Cevap: C)*
+
+4. **Kısıtlı bir kabukta (restricted shell) sadece `more` komutu varsa, tam bir kabuğa (bash) geçmek için izlenecek en iyi yol nedir?**
+   - A) `exit` yazmak.
+   - B) `more` içindeyken `v` ile Vim'e geçip oradan `:shell` komutunu çalıştırmak.
+   - C) Terminali kapatıp açmak.
+   - D) Bilgisayarı yeniden başlatmak.
+   *(Cevap: B)*
+
+5. **Zamanlanmış bir görevin (cron job) hangi scripti çalıştırdığını bulmak için hangi dosyaya bakılır?**
+   - A) `/etc/passwd`
+   - B) `/etc/cron.d/` altındaki ilgili görev dosyasına.
+   - C) `/var/log/messages`
+   - D) `/tmp/` dizinine.
+   *(Cevap: B)*
+
+---
+
 ## 📂 Group 6: Advanced Shells & Git (Levels 26-30) | Gelişmiş Kabuklar ve Git (Seviye 26-30)
 
 ### 📋 الملخص (Özet)
@@ -244,6 +361,45 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
 
 ---
 
+### 📝 Test Soruları (MCQs)
+
+1. **Kullanıcının giriş kabuğu kısıtlıysa (örneğin sadece bir metin gösterip kapanıyorsa), bunu aşmak için hangi metin editörünün "shell escape" özelliği kullanılabilir?**
+   - A) Notepad
+   - B) Nano
+   - C) Vi / Vim
+   - D) Gedit
+   *(Cevap: C)*
+
+2. **Bir Git deposunda hangi commit'lerin yapıldığını ve geçmiş mesajları görmek için hangi komut kullanılır?**
+   - A) `git show`
+   - B) `git log`
+   - C) `git status`
+   - D) `git diff`
+   *(Cevap: B)*
+
+3. **Git'te mevcut dosyaların durumunu (hangileri değişti, hangileri eklendi) kontrol etmek için kullanılan komut hangisidir?**
+   - A) `git status`
+   - B) `git branch`
+   - C) `git remote`
+   - D) `git push`
+   *(Cevap: A)*
+
+4. **Bir Git deposundaki farklı dallar (branches) arasında geçiş yapmak için hangi komut kullanılır?**
+   - A) `git move`
+   - B) `git switch` veya `git checkout`
+   - C) `git jump`
+   - D) `git merge`
+   *(Cevap: B)*
+
+5. **Git'te belirli bir commit noktasını işaretlemek için kullanılan "kalıcı etiketlere" ne ad verilir?**
+   - A) Branch
+   - B) Loop
+   - C) Tag
+   - D) Hook
+   *(Cevap: C)*
+
+---
+
 ## 🏁 Group 7: Final Levels (Levels 31-32) | Final Seviyeleri (Seviye 31-32)
 
 ### 📋 الملخص (Özet)
@@ -255,6 +411,45 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
 #### **Bandit 32: Posix Escape | Kabuk Değişkenleri**
 - **AR:** تجاوز قشرة تحول كل الأوامر إلى "UPPERCASE" باستخدام المتغيرات مثل `$0`.
 - **TR:** Tüm komutları büyük harfe çeviren kısıtlı bir kabuğu, `$0` kabuk değişkenini kullanarak aşma.
+
+---
+
+### 📝 Test Soruları (MCQs)
+
+1. **Git deposunda yaptığınız değişiklikleri uzak sunucuya (remote server) göndermek için hangi komut kullanılır?**
+   - A) `git commit`
+   - B) `git add`
+   - C) `git push`
+   - D) `git pull`
+   *(Cevap: C)*
+
+2. **`.gitignore` dosyasının bir Git deposundaki temel görevi nedir?**
+   - A) Dosyaları şifrelemek.
+   - B) Belirli dosya veya dizinlerin Git tarafından takip edilmesini (track) engellemek.
+   - C) Dosyaları silmek.
+   - D) Git komutlarını hızlandırmak.
+   *(Cevap: B)*
+
+3. **Bash kabuğunda `$0` özel değişkeninin değeri nedir?**
+   - A) En son çalıştırılan komutun durum kodu.
+   - B) Mevcut kullanıcının adı.
+   - C) Çalışan kabuğun veya scriptin ismi/yolu.
+   - D) İlk komut satırı parametresi.
+   *(Cevap: C)*
+
+4. **Tüm komutları otomatik olarak büyük harfe çeviren bir kabuğu aşmak için `$0` değişkeni nasıl kullanılabilir?**
+   - A) `$0` yazıp Enter'a basarak mevcut kabuğun yeni (ve kısıtlanmamış) bir kopyasını başlatabiliriz.
+   - B) `$0` değişkenini silerek.
+   - C) `$0=bash` yazarak.
+   - D) Bu kabuk aşılamaz.
+   *(Cevap: A)*
+
+5. **Git'te yeni bir dosyayı commit etmeden önce "izleme alanına" (staging area) eklemek için hangi komut kullanılır?**
+   - A) `git tag`
+   - B) `git add <dosya>`
+   - C) `git stash`
+   - D) `git init`
+   *(Cevap: B)*
 
 ---
 
@@ -294,5 +489,114 @@ Bu dosya, her seviye grubu için Arapça ve Türkçe özetler ile Türkçe alı�
    - C) `nmap`
    - D) `netstat`
    *(Cevap: C)*
+
+---
+
+### 🏆 15 Ekstra Karma Tekrar Sorusu (Genel Sınav Hazırlık)
+
+1. **`cat` komutu ile bir dosya okunurken ekran kayıyorsa, içeriği sayfa sayfa okumak için hangi komuta borulanır (`|`)?**
+   - A) `grep`
+   - B) `less` veya `more`
+   - C) `sort`
+   - D) `head`
+   *(Cevap: B)*
+
+2. **Bir dosyadaki satır sayısını öğrenmek için hangi komut kullanılır?**
+   - A) `len`
+   - B) `count`
+   - C) `wc -l`
+   - D) `lines`
+   *(Cevap: C)*
+
+3. **`find / -type f -size +1M` komutu ne işe yarar?**
+   - A) Kök dizinden itibaren 1 MB'dan büyük dosyaları arar.
+   - B) Sadece 1 MB'lık dosyaları siler.
+   - C) Dosyaları 1 MB olarak günceller.
+   - D) 1 MB'dan küçük dosyaları bulur.
+   *(Cevap: A)*
+
+4. **Kullanıcı şifrelerinin hash'lenmiş (şifrelenmiş) halleri genellikle hangi dosyada tutulur?**
+   - A) `/etc/passwd`
+   - B) `/etc/shadow`
+   - C) `/etc/group`
+   - D) `/etc/hosts`
+   *(Cevap: B)*
+
+5. **`grep -v "bandit"` komutundaki `-v` parametresi ne yapar?**
+   - A) Sadece "bandit" kelimesi geçen satırları gösterir.
+   - B) "bandit" kelimesi GEÇMEYEN satırları gösterir.
+   - C) Kelimeyi büyük harfe çevirir.
+   - D) Versiyon bilgisini gösterir.
+   *(Cevap: B)*
+
+6. **Bir dosyanın izinlerini `rwxr-xr-x` şeklinde değiştirmek için kullanılan sayısal kod hangisidir?**
+   - A) 644
+   - B) 777
+   - C) 755
+   - D) 700
+   *(Cevap: C)*
+
+7. **`ssh bandit14@localhost` bağlantısı başarısız oluyorsa ilk kontrol edilmesi gereken nedir?**
+   - A) İnternet hızı.
+   - B) Port numarasının (2220) belirtilip belirtilmediği.
+   - C) Bilgisayarın markası.
+   - D) Ekran parlaklığı.
+   *(Cevap: B)*
+
+8. **`tar -xf archive.tar` komutundaki `-x` harfi neyi temsil eder?**
+   - A) eXtract (Arşivi açmak)
+   - B) eXclude (Dosya hariç tutmak)
+   - C) eXecute (Dosyayı çalıştırmak)
+   - D) eXit (Çıkış yapmak)
+   *(Cevap: A)*
+
+9. **Bir komutun çıktısını bir dosyaya "üzerine yazmadan" (sonuna ekleyerek) kaydetmek için hangi sembol kullanılır?**
+   - A) `>`
+   - B) `>>`
+   - C) `|`
+   - D) `<`
+   *(Cevap: B)*
+
+10. **Bash'te bir değişken tanımlarken (örneğin `isim=bandit`) değişkenin değerini kullanmak için başına ne eklenir?**
+    - A) `&`
+    - B) `@`
+    - C) `$`
+    - D) `%`
+    *(Cevap: C)*
+
+11. **Sistemde o an çalışan süreçleri (processes) listelemek için hangi komut kullanılır?**
+    - A) `proc`
+    - B) `ls`
+    - C) `ps aux`
+    - D) `top -n 0`
+	*(Cevap: C)*
+
+12. **`chmod 400 key.private` komutu bu dosyaya hangi yetkiyi verir?**
+    - A) Sadece sahibi okuyabilir (Read only).
+    - B) Herkes yazabilir.
+    - C) Dosya silinir.
+    - D) Sahibi çalıştırabilir (Execute).
+    *(Cevap: A)*
+
+13. **Bir metin dosyasındaki ilk 10 satırı görmek için hangi komut kullanılır?**
+    - A) `first`
+    - B) `top`
+    - C) `head`
+    - D) `tail`
+    *(Cevap: C)*
+
+14. **`nc -lvp 4444` komutunda `-l` parametresi ne anlama gelir?**
+    - A) List (Listele)
+    - B) Listen (Dinle/Listener modu)
+    - C) Low (Düşük hız)
+    - D) Login (Giriş yap)
+    *(Cevap: B)*
+
+15. **Git'te bir değişikliği geri almak (undo) veya bir commit'i iptal etmek için hangi komut kullanılır?**
+    - A) `git cancel`
+    - B) `git stop`
+    - C) `git revert` veya `git reset`
+    - D) `git delete`
+    *(Cevap: C)*
 
 ---
